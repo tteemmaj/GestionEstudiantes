@@ -13,9 +13,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class GestionVentana extends javax.swing.JPanel {
 
-    /**
-     * Creates new form GestionVentana
-     */
     private GestionEstudiantes gestion;
     
     public GestionVentana() {
@@ -71,7 +68,6 @@ public class GestionVentana extends javax.swing.JPanel {
             textoCarrera.setText(encontrado.getCarrera());
             textoCarne.setEditable(false);
 
-            // 2. Seleccionar la fila en la tabla
             DefaultTableModel model = (DefaultTableModel) tablaRegistrados.getModel();
             for (int i = 0; i < model.getRowCount(); i++) {
                 if (model.getValueAt(i, 0).toString().equalsIgnoreCase(carnetBusqueda)) {
@@ -394,7 +390,6 @@ public class GestionVentana extends javax.swing.JPanel {
     }//GEN-LAST:event_btnCargarSeleccionActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
-        // TODO add your handling code here:
         String carnetELiminar = "";
     int fila = tablaRegistrados.getSelectedRow();
 

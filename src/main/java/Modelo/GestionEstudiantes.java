@@ -9,7 +9,6 @@ public class GestionEstudiantes {
         estudiantes = new ArrayList<>();
     }
 
-    // Getter para poblar la JTable
     public ArrayList<Estudiante> getListaEstudiantes() {
         return estudiantes;
     }
@@ -18,7 +17,6 @@ public class GestionEstudiantes {
         return estudiantes;
     }
 
-    // Métodos para agregar
     public void guardar(Estudiante e) {
         estudiantes.add(e);
     }
@@ -27,7 +25,6 @@ public class GestionEstudiantes {
         guardar(e);
     }
 
-    // Métodos para buscar
     public Estudiante buscar(String carnet) {
         for (Estudiante estudiante : estudiantes) {
             if (estudiante.getCarnet().equalsIgnoreCase(carnet)) {
@@ -41,7 +38,6 @@ public class GestionEstudiantes {
         return buscar(carnet);
     }
 
-    // Método para modificar
     public boolean modificar(String carnet, Estudiante e) {
         for (int i = 0; i < estudiantes.size(); i++) {
             if (estudiantes.get(i).getCarnet().equalsIgnoreCase(carnet)) {
@@ -52,7 +48,6 @@ public class GestionEstudiantes {
         return false;
     }
 
-    // Métodos para eliminar
     public boolean eliminar(String carnet) {
         for (int i = 0; i < estudiantes.size(); i++) {
             if (estudiantes.get(i).getCarnet().equalsIgnoreCase(carnet)) {
