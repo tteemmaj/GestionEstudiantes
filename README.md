@@ -16,7 +16,7 @@
 Pantalla de inicio del programa
 
 <p align="center">
-  <img src="blob:https://imgur.com/7e06a4f2-7726-41a9-b67a-01a5d8215e87" alt="Página de inicio" width="650"/>
+  <img src="https://i.imgur.com/eCwtKih.png" alt="Página de inicio" width="650"/>
 </p>
 
 
